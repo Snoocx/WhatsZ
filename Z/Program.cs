@@ -104,6 +104,8 @@ internal class Program
         {
             Console.WriteLine("\nZahl eingeben:");
             var input = Console.ReadLine();
+            if (string.IsNullOrWhiteSpace(input))
+                return;
             z = int.Parse(input);
         }
 
